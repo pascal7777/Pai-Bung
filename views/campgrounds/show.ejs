@@ -6,7 +6,7 @@
       <div class="carousel-inner">
         <% campground.images.forEach((img, i) => { %>
         <div class="carousel-item <%= i === 0 ? 'active' : ''%>">
-          <img src="<%= img.url%>" class="d-block w-100" alt="" />
+          <img src="<%= img.cardImage%>" class="d-block w-100" alt="" />
         </div>
         <% }) %>
       </div>
@@ -128,7 +128,7 @@
     </form>
   
     <% } else { %>
-      <br><a href="/login?returnTo=/campgrounds/<%= campground._id%>" class="btn btn-lg btn-primary">Give a Rating and a Review or Message</a>
+      <br><a href="/login?returnTo=/campgrounds/<%= campground._id%>" class="btn btn-sm btn-primary">Leave a Message</a>
     <%}%>
   
     <br><br>
