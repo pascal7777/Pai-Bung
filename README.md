@@ -1,2 +1,2 @@
 # Pai-Bung
-SItes in Laos
+Sites in Laos
